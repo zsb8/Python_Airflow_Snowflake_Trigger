@@ -2,13 +2,13 @@
 Use Airflow to query Snowflake. If the table have new rows, it will trigger the DAG to send mail. 
 
 # Project Goal
-*  Use the lib to connect Snowflake in Airflow. 
-Can set the schedule interval in Airflow.
-Can read and set varable in Airflow.
-Can use SnowflakeHook to query data in Airflow.
-Can use xcom to get the result of other function in Airflow.
-can judge and trggir another DAG. and can set the schedule interval. 
-Can send mail with Airflake.
+* Use the lib to connect Snowflake in Airflow. 
+* Can set the schedule interval in Airflow.
+* Can read and set varable in Airflow.
+* Can use SnowflakeHook to query data in Airflow.
+* Can use xcom to get the result of other function in Airflow.
+* can judge and trggir another DAG. and can set the schedule interval. 
+* Can send mail with Airflake.
 
 # Table of Contents
 1. [Prerequisites](#prerequisites)
