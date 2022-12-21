@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
-from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator, SnowflakeValueCheckOperator
 from airflow.hooks.base_hook import BaseHook
 from airflow.models import Variable
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
@@ -71,8 +70,8 @@ with DAG(
         task_id='branch_task',
         python_callable=determine_next_task,
     )
-    task_pass = PythonOperator(
+    task3 = PythonOperator(
         task_id='task_pass',
         python_callable=some_other_function,
     )
-    count_query >> store_val_to_airflow >> branch_task >> [trigger_next_dag, task_pass]
+    count_query >> store_val_to_airflow >> branch_task >> [trigger_next_dag, task3]
