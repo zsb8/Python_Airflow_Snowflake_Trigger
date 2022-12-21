@@ -22,7 +22,11 @@ Use Airflow to query Snowflake. If the table have new rows, it will trigger the 
 - Airflow 2.5
 - Snowflake
 
-# The 
+# project_steps <a name="project_steps"></a>
 
-# The Grah in AirFlow
+## DAGs
+There are two DAGs, one named `a_zsb_monitor`, the ohter named `a_zsb_send_mail`. The  `a_zsb_monitor` used to monitor the table named `zsb_tb` of Snowflake, and `a_zsb_send_mail` used to be trigger to send mail if the table has new rows.
+![image](https://user-images.githubusercontent.com/75282285/208808318-43a7f891-8a73-4857-af0e-702fa4d4a6db.png)
+
+## The Grah in AirFlow
 
