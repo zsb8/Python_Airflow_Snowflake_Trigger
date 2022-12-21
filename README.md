@@ -40,3 +40,8 @@ It runs every 2 mins. If it find the zsb_tb table has new row, will run the my_t
 ## The detail of the 'a_zsb_monitor' DAG
 ![image](https://user-images.githubusercontent.com/75282285/208809500-49646905-acd3-497f-846f-00c872a0c44b.png)
 
+
+## The configuration of Variable
+This variable named snowflake_count_number store the rows number of table zsb_tb of Snowflake. If DAG find the new rows in Snowflake, this variable will be updated to the newest rows number.
+![image](https://user-images.githubusercontent.com/75282285/208809988-df17a77b-4544-42d5-acf8-12b1c91bac41.png)
+
