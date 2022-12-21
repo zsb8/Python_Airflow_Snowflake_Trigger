@@ -23,6 +23,9 @@ Use Airflow to query Snowflake. If the table have new rows, it will trigger the 
 - Snowflake
 
 # project_steps <a name="project_steps"></a>
+## Build Airflow test env
+![image](https://user-images.githubusercontent.com/75282285/208811379-6ba7e2de-9ece-413e-a993-1f9d40091af7.png)
+
 
 ## DAGs
 There are two DAGs, one named `a_zsb_monitor`, the ohter named `a_zsb_send_mail`. The  `a_zsb_monitor` used to monitor the table named `zsb_tb` of Snowflake, and `a_zsb_send_mail` used to be trigger to send mail if the table has new rows.
@@ -41,7 +44,13 @@ It runs every 2 mins. If it find the zsb_tb table has new row, will run the my_t
 ![image](https://user-images.githubusercontent.com/75282285/208809500-49646905-acd3-497f-846f-00c872a0c44b.png)
 
 
-## The configuration of Variable
+## The Variable
 This variable named snowflake_count_number store the rows number of table zsb_tb of Snowflake. If DAG find the new rows in Snowflake, this variable will be updated to the newest rows number.
 ![image](https://user-images.githubusercontent.com/75282285/208809988-df17a77b-4544-42d5-acf8-12b1c91bac41.png)
+
+## The connection
+For secure to store the connection parameters of Snowflake, I add the connection in Airflow. 
+![image](https://user-images.githubusercontent.com/75282285/208810345-a903aae9-09a4-41ed-94e5-80104b5ea141.png)
+It includes some items, such as Loginm, password, Account, Warehouse, Database, 
+
 
