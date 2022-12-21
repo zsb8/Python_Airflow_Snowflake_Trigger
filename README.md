@@ -13,9 +13,6 @@ I used Airflow to build the DAGs to query Snowflake. If the table have new rows,
 # Table of Contents
 1. [Prerequisites](#prerequisites)
 2. [Project Steps](#project_steps)
-3. [Troubleshooting](#troubleshooting)
-4. [Reference](#reference)
-
 
 # Prerequisites  <a name="prerequisites"></a>
 - Ubuntu 20.04 OS
@@ -53,5 +50,10 @@ For secure to store the connection parameters of Snowflake, I add the connection
 ![image](https://user-images.githubusercontent.com/75282285/208810345-a903aae9-09a4-41ed-94e5-80104b5ea141.png)
 It includes some items, such as Loginm, password, Account, Warehouse, Database etc.
 ![image](https://user-images.githubusercontent.com/75282285/208811501-ed40cd71-b531-44b3-8a6c-0760885aa5f6.png)
+
+
+## The schedule
+It will monitor every 2 mins.
+![image](https://user-images.githubusercontent.com/75282285/208811802-297ede0b-0c15-461b-80ff-8ad36fee3bc7.png)
 
 
