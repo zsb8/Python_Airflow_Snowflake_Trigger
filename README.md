@@ -51,6 +51,7 @@ This variable named snowflake_count_number store the rows number of table zsb_tb
 ## The connection
 For secure to store the connection parameters of Snowflake, I add the connection in Airflow. 
 ![image](https://user-images.githubusercontent.com/75282285/208810345-a903aae9-09a4-41ed-94e5-80104b5ea141.png)
-It includes some items, such as Loginm, password, Account, Warehouse, Database, 
+It includes some items, such as Loginm, password, Account, Warehouse, Database etc.
+![image](https://user-images.githubusercontent.com/75282285/208811501-ed40cd71-b531-44b3-8a6c-0760885aa5f6.png)
 
 
