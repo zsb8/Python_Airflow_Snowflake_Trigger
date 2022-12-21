@@ -33,6 +33,8 @@ From the Graph, you will see it judge and BranchPythonOperator.
 ![image](https://user-images.githubusercontent.com/75282285/208809076-40075b18-75c8-4c7f-a869-bc9e1352a974.png)
 
 ## The Grid in Airflow Control panel
+It runs every 2 mins. If it find the zsb_tb table has new row, will run the my_trigger and send mail to me, otherwise, it do nothing.
+![image](https://user-images.githubusercontent.com/75282285/208809854-8052d05c-07e1-4b20-8b04-7c6f2d9aa35e.png)
 
 
 ## The detail of the 'a_zsb_monitor' DAG
