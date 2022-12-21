@@ -60,6 +60,7 @@ It will monitor every 2 mins.
 
 # Troubleshooting <a name="troubleshooting"></a>
 ## Issue1: Can't open the login page
-You want to run Airflow in the background. After you run the `airflow webserver --port 8080 -D`, but you will find you can't open the `xxxx:8080` to login.  
+You want to run Airflow in the background. After you run the `airflow webserver --port 8080 -D`, but you will find you can't open the `xxxx:8080` to login.      
+Solution: Delelet all *.pid files in the /home/zsb/airflow/, run the command `airflow webserver --port 8080 -D` again. It will be OK.
 ![image](https://user-images.githubusercontent.com/75282285/208895730-9c2178f0-5861-45f5-8ade-534e2e4ff431.png)
 
