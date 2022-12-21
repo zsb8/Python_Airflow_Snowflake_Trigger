@@ -29,6 +29,8 @@ There are two DAGs, one named `a_zsb_monitor`, the ohter named `a_zsb_send_mail`
 ![image](https://user-images.githubusercontent.com/75282285/208808318-43a7f891-8a73-4857-af0e-702fa4d4a6db.png)
 
 ## The Graph in AirFlow
+From the Graph, you will see it judge and BranchPythonOperator. 
 ![image](https://user-images.githubusercontent.com/75282285/208809076-40075b18-75c8-4c7f-a869-bc9e1352a974.png)
 
-## The log 
+## The Grid in Airflow Control panel
+
