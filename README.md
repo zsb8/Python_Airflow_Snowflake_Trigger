@@ -2,7 +2,7 @@
 Use Airflow to query Snowflake. If the table have new rows, it will trigger the DAG to send mail. 
 
 # Project Goal
-Use the lib to connect Snowflake in Airflow. 
+0. Use the lib to connect Snowflake in Airflow. 
 Can set the schedule interval in Airflow.
 Can read and set varable in Airflow.
 Can use SnowflakeHook to query data in Airflow.
