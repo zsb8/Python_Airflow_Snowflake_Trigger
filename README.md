@@ -34,3 +34,7 @@ From the Graph, you will see it judge and BranchPythonOperator.
 
 ## The Grid in Airflow Control panel
 
+
+## The detail of the 'a_zsb_monitor' DAG
+![image](https://user-images.githubusercontent.com/75282285/208809500-49646905-acd3-497f-846f-00c872a0c44b.png)
+
