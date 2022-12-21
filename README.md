@@ -64,3 +64,6 @@ You want to run Airflow in the background. After you run the `airflow webserver 
 Solution: Delelet all *.pid files in the /home/zsb/airflow/, run the command `airflow webserver --port 8080 -D` again. It will be OK.
 ![image](https://user-images.githubusercontent.com/75282285/208895730-9c2178f0-5861-45f5-8ade-534e2e4ff431.png)
 
+## Issue2: Configure the connection of Snowflake in Airflow
+In the parameters in the page of connection of Snowflake, the Host item is useless.You can test it is OK in connection page even if you don't input Host address in Airflow.     
+If you use BaseHook.get_connection, you will find only `login`, `password`, `schema` are useful, other items can't be pulled in BaseHook.get_connection.
