@@ -69,9 +69,9 @@ In the parameters in the page of connection of Snowflake, the Host item is usele
 If you use BaseHook.get_connection, you will find only `login`, `password`, `schema` are useful, other items can't be pulled in BaseHook.get_connection.
 
 # <a name="reference">Reference</a>
-[Basic Concepts]([https://airflow.apache.org/docs/apache-airflow/1.10.6/concepts.html?highlight=branch%20operator])</br>
-[Set up a Database]([https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-deploy](https://airflow.apache.org/docs/apache-airflow/stable/howto/set-up-database.html))</br>
-[Providers packages]([https://developer.hashicorp.com/vault/tutorials/secrets-management/static-secrets#store-the-google-api-key](https://airflow.apache.org/docs/apache-airflow-providers/packages-ref.html))</br>
-[S3 example]([https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/_modules/tests/system/providers/amazon/aws/example_s3.html])</br>
-[Snowflake example]([https://community.snowflake.com/s/article/How-to-connect-Apache-Airflow-to-Snowflake-and-schedule-queries-jobs])</br>
+[Basic Concepts](https://airflow.apache.org/docs/apache-airflow/1.10.6/concepts.html?highlight=branch%20operator)</br>
+[Set up a Database](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-deploy](https://airflow.apache.org/docs/apache-airflow/stable/howto/set-up-database.html)</br>
+[Providers packages](https://airflow.apache.org/docs/apache-airflow-providers/packages-ref.html)</br>
+[S3 example](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/_modules/tests/system/providers/amazon/aws/example_s3.html)</br>
+[Snowflake example](https://community.snowflake.com/s/article/How-to-connect-Apache-Airflow-to-Snowflake-and-schedule-queries-jobs)</br>
 
