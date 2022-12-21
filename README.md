@@ -13,6 +13,8 @@ I used Airflow to build the DAGs to query Snowflake. If the table have new rows,
 # Table of Contents
 1. [Prerequisites](#prerequisites)
 2. [Project Steps](#project_steps)
+3. [Troubleshooting](#troubleshooting)
+4. [Reference](#reference)
 
 # Prerequisites  <a name="prerequisites"></a>
 - Ubuntu 20.04 OS
@@ -56,4 +58,8 @@ It includes some items, such as Loginm, password, Account, Warehouse, Database e
 It will monitor every 2 mins.
 ![image](https://user-images.githubusercontent.com/75282285/208811802-297ede0b-0c15-461b-80ff-8ad36fee3bc7.png)
 
+# Troubleshooting <a name="troubleshooting"></a>
+## Issue1: Can't open the login page
+You want to run Airflow in the background. After you run the `airflow webserver --port 8080 -D`, but you will find you can't open the `xxxx:8080` to login.  
+![image](https://user-images.githubusercontent.com/75282285/208895730-9c2178f0-5861-45f5-8ade-534e2e4ff431.png)
 
