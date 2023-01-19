@@ -33,7 +33,7 @@ with DAG(
         "retries": 1,
         "retry_delay": timedelta(minutes=2),
     },
-    description=f"zsb! A simple tutorial DAG",
+    description=f"zsb! A good man!",
     schedule_interval=timedelta(minutes=2),
     start_date=datetime(2021, 1, 1),
     catchup=False,
