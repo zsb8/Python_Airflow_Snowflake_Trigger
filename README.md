@@ -21,6 +21,46 @@ I used Airflow to build the DAGs to query Snowflake. If the table have new rows,
 - Airflow 2.5
 - Snowflake
 
+# Main code
+```
+with DAG(
+    dag_id=f"a_zsb_monitor",
+    default_args={
+        "depends_on_past": False,
+        "email": ['songbin.zhang@gmail.com'],
+        "email_on_failure": True,
+        "email_on_retry": True,
+        "retries": 1,
+        "retry_delay": timedelta(minutes=2),
+    },
+    description=f"zsb! A simple tutorial DAG",
+    schedule_interval=timedelta(minutes=2),
+    start_date=datetime(2021, 1, 1),
+    catchup=False,
+    tags=["zsbdata"],
+    max_active_runs=1,
+) as dag:
+    dag.doc_md = "4"
+    count_query = PythonOperator(task_id="count_query", python_callable=count1)
+    store_val_to_airflow = PythonOperator(task_id="store_val", python_callable=snowflake_variables)
+    trigger_next_dag = TriggerDagRunOperator(
+        trigger_dag_id="send_email",
+        task_id="my_trigger",
+        execution_date="{{ds}}",
+        wait_for_completion=False,
+        reset_dag_run=True,
+    )
+    branch_task = BranchPythonOperator(
+        task_id='branch_task',
+        python_callable=determine_next_task,
+    )
+    task3 = PythonOperator(
+        task_id='task_pass',
+        python_callable=some_other_function,
+    )
+    count_query >> store_val_to_airflow >> branch_task >> [trigger_next_dag, task3]
+```
+
 # project_steps <a name="project_steps"></a>
 ## Build Airflow test env
 ![image](https://user-images.githubusercontent.com/75282285/208811379-6ba7e2de-9ece-413e-a993-1f9d40091af7.png)
