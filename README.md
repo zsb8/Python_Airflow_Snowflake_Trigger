@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/75282285/222922597-5cc59d8c-96b9-4ba2-b54b-2454f7c26f08.png)
+
+
 # Python_Airflow_Snowflake_Trigger
 I used Airflow to build the DAGs to query Snowflake. If the table have new rows, it will trigger the DAG to send mail. 
 
